@@ -1,5 +1,7 @@
 import { ImageDetector } from '@/components/ImageDetector';
 import { FakeNewsDetector } from '@/components/FakeNewsDetector';
+import { VideoDetector } from '@/components/VideoDetector';
+import { AudioDetector } from '@/components/AudioDetector';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -25,15 +27,15 @@ const Index = () => {
           </Badge>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Authenticity
+            Digital Truth
             <span className="block bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
-              Guardian
+              Shield Detector
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Detect deepfakes, manipulated images, and misinformation with cutting-edge AI technology. 
-            Protect truth in the digital age.
+            Complete deepfake detection suite - analyze images, videos, audio, and news content 
+            with advanced AI to protect against digital manipulation and misinformation.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -91,15 +93,17 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Advanced Detection Tools
+              Complete Deepfake Detection Suite
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Our AI-powered tools analyze content across multiple dimensions to detect manipulation and misinformation
+              Comprehensive AI-powered analysis across all media types - images, videos, audio, and text content
             </p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <ImageDetector />
+            <VideoDetector />
+            <AudioDetector />
             <FakeNewsDetector />
           </div>
         </div>
@@ -110,10 +114,10 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Choose Authenticity Guardian?
+              Why Choose Digital Truth Shield?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Cutting-edge technology meets user-friendly design
+              Advanced deepfake detection technology meets intuitive design
             </p>
           </div>
           
@@ -196,9 +200,9 @@ const Index = () => {
             <div className="flex items-start gap-4 p-4 rounded-lg bg-gradient-glass backdrop-blur-sm">
               <CheckCircle className="h-6 w-6 text-success mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold mb-1">Video Analysis</h4>
+                <h4 className="font-semibold mb-1">Video Deepfake Detection</h4>
                 <p className="text-sm text-muted-foreground">
-                  Your existing video detection capabilities for deepfake videos
+                  Frame-by-frame analysis for face swaps, lip-sync issues, and temporal anomalies
                 </p>
               </div>
             </div>
@@ -206,9 +210,9 @@ const Index = () => {
             <div className="flex items-start gap-4 p-4 rounded-lg bg-gradient-glass backdrop-blur-sm">
               <CheckCircle className="h-6 w-6 text-success mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold mb-1">Audio Verification</h4>
+                <h4 className="font-semibold mb-1">Audio Synthesis Detection</h4>
                 <p className="text-sm text-muted-foreground">
-                  Your existing audio detection for synthetic voice and manipulated audio
+                  Voice cloning and synthetic speech detection using spectral and prosody analysis
                 </p>
               </div>
             </div>
@@ -221,10 +225,10 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Shield className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">Authenticity Guardian</span>
+            <span className="text-xl font-bold">Digital Truth Shield Detector</span>
           </div>
           <p className="text-muted-foreground">
-            Protecting truth in the digital age with advanced AI detection technology
+            Advanced deepfake detection suite protecting against digital manipulation across all media types
           </p>
         </div>
       </footer>
